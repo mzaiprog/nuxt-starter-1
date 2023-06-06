@@ -50,8 +50,18 @@ npm run preview
   - add to nuxt.config.ts:
     - css: ["bootstrap/dist/css/bootstrap.min.css"] 
 - npm install bootstrap
-- create /components/BootstrapWelcome.vue: with <template> insert sample code here </template>
+- create /components/BootstrapWelcome.vue: with `<template>` insert sample code here `</template>`
   - insert sample HTML code from https://getbootstrap.com/docs/5.3/components/navbar
+- Follow: https://nuxt-socket-io.netlify.app/installation
+  - npm install nuxt-socket-io
+  - npm audit fix --force
+- Use Messages Component from https://github.com/richardeschloss/nuxt-socket-io/blob/master/components/Messages.vue
+  - wget -P components https://raw.githubusercontent.com/richardeschloss/nuxt-socket-io/master/components/Messages.vue
+- Use IO handler from https://github.com/richardeschloss/nuxt-socket-io/master/server/io/index.js as default
+  - wget -cO - https://raw.githubusercontent.com/richardeschloss/nuxt-socket-io/master/server/io/index.js >server/io.js
+- Fix:
+  - Messages.vue
+    - replace `channel: '/index',` with `channel: '/',`
 
 ## Support
 Mike Ziebeck: mike@ziebeck.net
@@ -69,4 +79,4 @@ Via GitHub issue & pr.
 - MIT
 
 ## Project status
-Aktive
+Active
