@@ -42,6 +42,16 @@ npm run preview
 ### Follow steps (if you do it on your own)
 - Follow: https://nuxt.com/docs/getting-started/installation
   - npx nuxi init nuxt-starter-1
+  - cd nuxt-starter-1 & npm install
+- Follow: https://stackoverflow.com/questions/70099682/integrating-bootsrap-5-in-nuxt-3-and-vite
+  - create /plugins/useBootstrap.client.ts with:
+    - import * as bootstrap from "bootstrap";
+    - export default defineNuxtPlugin(() => { return { provide: { bootstrap: bootstrap } }; });
+  - add to nuxt.config.ts:
+    - css: ["bootstrap/dist/css/bootstrap.min.css"] 
+- npm install bootstrap
+- create /components/BootstrapWelcome.vue: with <template> insert sample code here </template>
+  - insert sample HTML code from https://getbootstrap.com/docs/5.3/components/navbar
 
 ## Support
 Mike Ziebeck: mike@ziebeck.net

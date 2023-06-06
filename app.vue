@@ -1,5 +1,8 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+    <div>
+        <BootstrapWelcome />
+    </div>
+    <div>
+        <NuxtWelcome />
+    </div>
 </template>
