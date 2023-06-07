@@ -20,26 +20,34 @@ cd YourNewProjectName & npm install
 ```
 
 ## Usage
-### Run dev server: 
+### Run dev server: (OK)
 ```shell
 npm run dev
 ```
 - Follow instructions on screen.
 
-### Build client & server for production: 
+### Build client & server for production: *)
 ```shell
 npm run build
 ```
 - Notice instructions on screen.
 
-### Locally preview production build:
+### Locally preview production build: *)
 ```shell
 npm run preview
 ```
 
-### Customize configuration
+*) could not get it running properly using:
+```shell
+node .output/server/index.mjs
+```
 
-### Follow steps (if you do it on your own)
+### Customize configuration
+- edit: nuxt.config.ts
+- add: server/io/*.js   -> server namespace handlers
+- edit: `channel: '/',` -> client namespace addressing
+
+### Follow steps (if you do it on your own) (!)incomlete
 - Follow: https://nuxt.com/docs/getting-started/installation
   - npx nuxi init nuxt-starter-1
   - cd nuxt-starter-1 & npm install
@@ -67,7 +75,7 @@ npm run preview
 Mike Ziebeck: mike@ziebeck.net
 
 ## Roadmap
-No improvements any further.
+Further improvements, if nuxt-socket-io gets more mature.
 
 ## Contributing
 Via GitHub issue & pr.
@@ -79,4 +87,4 @@ Via GitHub issue & pr.
 - MIT
 
 ## Project status
-Active
+Finished so far.
