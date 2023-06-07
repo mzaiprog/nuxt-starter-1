@@ -1,9 +1,6 @@
 {
     "name": "nuxt-starter-1",
     "private": true,
-    "files": [
-        "lib"
-    ],
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
